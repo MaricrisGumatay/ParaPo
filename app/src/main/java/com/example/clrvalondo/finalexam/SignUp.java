@@ -32,7 +32,7 @@ public class SignUp extends Activity
     }
 
     boolean nameValidator(String name) {
-        String flname = "[A-Za-z]{2,}$";
+        String flname = "^[A-Za-z]{1,}$";
         Pattern pattern = Pattern.compile(flname);
         Matcher matcher = pattern.matcher(name);
         return matcher.matches();
