@@ -61,9 +61,8 @@ public class MainActivity extends Activity {
                     //Toast.makeText(MainActivity.this, loginDataBaseAdapter.getSinlgeEntry(email), Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(getApplicationContext(), OnTouchListener.class);
                     startActivity(intent);
-
-                    editTextEmail.setText("");
-                    ediTextPassword.setText("");
+                    finish();
+                 
 
 
                 } else {
