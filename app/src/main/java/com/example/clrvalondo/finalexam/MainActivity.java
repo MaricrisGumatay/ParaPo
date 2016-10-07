@@ -42,6 +42,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(intent);
+                finish();
             }
         });
 
